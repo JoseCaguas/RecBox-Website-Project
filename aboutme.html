@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/recboxcss.css">
+    <title>My Portfolio - Bio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <style>
+    </style>
+</head>
+
+<body>
+<div>
+    <header>
+        <h1>RecBox</h1>
+        <h2>Therapeutic Activities in a Box</h2>
+        <div id="letters">
+            <ul id="menu">
+                <li class="A2Z">A</li>
+                <li class="A2Z">B</li>
+                <li class="A2Z">C</li>
+                <li class="A2Z">D</li>
+                <li class="A2Z">E</li>
+                <li class="A2Z">F</li>
+                <li class="A2Z">G</li>
+                <li class="A2Z">H</li>
+                <li class="A2Z">I</li>
+                <li class="A2Z">J</li>
+                <li class="A2Z">K</li>
+                <li class="A2Z">L</li>
+                <li class="A2Z">M</li>
+                <li class="A2Z">N</li>
+                <li class="A2Z">O</li>
+                <li class="A2Z">P</li>
+                <li class="A2Z">Q</li>
+                <li class="A2Z">R</li>
+                <li class="A2Z">S</li>
+                <li class="A2Z">T</li>
+                <li class="A2Z">U</li>
+                <li class="A2Z">V</li>
+                <li class="A2Z">W</li>
+                <li class="A2Z">X</li>
+                <li class="A2Z">Y</li>
+                <li class="A2Z">Z</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="body">
+            Hello World!!!
+        </div>
+    </main>
+
+    <footer>
+        <div align="center">
+            <a href="https://www.itt-tech.edu/" style="height: 100px;">
+                <img src="https://images.itt-tech.edu/edu/misc/logo-ITT.svg" alt="ITT Logo"
+                     style="height: 50px; margin: 10px">
+            </a>
+            <a href="https://www.w3.org/" style="height: 100px;">
+                <img src="http://js.devexpress.com/Content/Images/features/html5-css-javascript-logos.png"
+                     alt="HTML, CSS, JavaScript Logo" style="height: 50px; margin: 10px">
+            </a>
+        </div>
+        Copyright &copy; 2016 Jose L. Torres
+    </footer>
+
+</div>
+<script>
+
+    $(".A2Z").on("mouseenter", function () {
+        $(this).animate({fontSize: '+=100%'}, 400);
+        $(this).css("cursor", "pointer");
+    });
+    $(".A2Z").on("mouseleave", function () {
+        $(this).animate({fontSize: '-=100%'}, 400);
+    });
+    $(".A2Z").on("click", function () {
+        $(".A2Z").animate({fontSize: '1em',}, 400);
+        $(".A2Z").css("background-color", "purple");
+        $(".A2Z").css("color", "white");
+        $(this).animate({fontSize: '+=200%', background: 'white', color: 'purple'}, 600);
+        $(this).css("background-color", "white");
+        $(this).css("color", "purple");
+    });
+
+</script>
+</body>
+</html>
+<!--mongule db, nodeJS, angularJS, crud-->
