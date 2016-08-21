@@ -3,8 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <script src="/js/plugins/instagramLite.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/recboxcss.css">
     <title>My Portfolio - Bio</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -22,7 +21,7 @@
     </header>
 
     <main>
-        <ul class="instagram-lite"></ul>
+        <div class="myslider"></div>
 
         <div id="body">
             <h1><b>What</b> is RecBox?</h1>
@@ -76,19 +75,20 @@
     </footer>
 
 </div>
+
 <script>
     $(function () {
 
-        $('.instagram-lite').instagramLite({
-            accessToken: '1730464.199554e.e5dbe412c53b4292a4d993e82b67a61f',
-            list: false,
-            urls: false,
-            success: function () {
-                console.log('The request was successful!');
-            },
-            error: function (errorCode, errorMessage) {
-                console.log('There was an error with the request');
-            }
+        $('.myslider').instaSlider({
+            clientID: '1ef100b08cd44e639690f1a9b161cd69',
+            access_token: '206535923.1ef100b.dce1da69cce8437ebe2a58a31fe7bd41',
+            search: '@recbox',
+            prevClass: 'prev',
+            nextClass: 'next',
+            limit: 5,
+            duration: 1000,
+            auto: true,
+            delay: 5000
         });
     });
 </script>
