@@ -114,24 +114,22 @@ ul#menu {
     width: 90%;
 }
 
-ul#menu li {
-    display: inline;
-    position: relative;
-}
 
 ul#menu li {
     background-color: purple;
-    color: white;
+    /*color: red;*/
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 8px 8px 8px 8px;
     margin: 20px 1px;
+    display: inline;
+    position: relative;
 }
 
-/*ul#menu li:hover {
+ul#menu li:hover {
     background-color: white;
-    color:purple;
-    }*/
+    /*color:purple;*/
+}
 div#letters {
     min-height: 50px;
     text-align: center;
